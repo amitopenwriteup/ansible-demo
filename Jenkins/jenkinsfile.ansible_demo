@@ -8,7 +8,8 @@ pipeline {
                                 credentialsId: 'ansible_user_auth', 
                                 installation: 'Default', 
                                 inventory: 'inventory/static.ini', 
-                                playbook: 'playbook/ansible-demo-pb.yaml'
+                                playbook: 'playbook/ansible-demo-pb.yaml', 
+                                extras: '-e host_group=dbservers'
             }
         }
     }
