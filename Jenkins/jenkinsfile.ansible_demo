@@ -7,7 +7,7 @@ pipeline {
                 ansiblePlaybook colorized: true, 
                                 credentialsId: 'ansible_user_auth', 
                                 installation: 'Default', 
-                                inventory: 'inventory/dynamic.aws_ec2.yml', 
+                                inventory: 'inventory/static.ini', 
                                 playbook: 'playbook/ansible-demo-pb.yaml'
             }
         }
